@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    overflow: hidden;
+}
+
+.background-design {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: float 6s ease-in-out infinite;
+}
+
+.circle.small {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 20%;
+}
+
+.circle.medium {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 70%;
+    animation-delay: 2s;
+}
+
+.circle.large {
+    width: 200px;
+    height: 200px;
+    top: 80%;
+    left: 10%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1e3c72;
+}
+
+.description p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0056b3, #003f8a);
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+footer span {
+    color: red;
+    font-size: 1rem;
+}
+
+.error {
+    margin-top: 15px;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.success {
+    margin-top: 15px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+}

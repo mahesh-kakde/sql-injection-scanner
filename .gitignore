@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Node/JS build
+node_modules/
+dist/
+build/
+.cache/
+.DS_Store
+
+# Editor / OS files
+.idea/
+.vscode/
+*.log
+*.tmp
+
+# Output/Reports
+sql_injection_report.html
